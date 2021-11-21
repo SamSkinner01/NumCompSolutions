@@ -85,11 +85,13 @@ double simpsonsMethod(double hsmall, double x[], double fx[], int size){ // Simp
 
 
 int main(){
+
+    cout << "\nSize is 9, n=8, h = .1 \n";
     cout << "\nWithout Lagrange Interpolation!\n--------------------------------------------";
-    cout << "\nTrapezoid Method, h=.1 and n=9 : " << trapezoidalMethod(.1,x,fx,size) << endl;
-    cout << "Simpsons Method, h=.1 and n=8 : " << simpsonsMethod(.1,x,fx,size) << endl << endl;
+    cout << "\nTrapezoid Method : " << setprecision(10) << trapezoidalMethod(.1,x,fx,size) << endl;
+    cout << "Simpsons Method : " << setprecision(10) << simpsonsMethod(.1,x,fx,size) << endl << endl;
 
     cout << "\nWith Lagrange Interpolation!\n-----------------------------------------------";
-    cout << "\nTrapezoid Method, h=.1 and n=9 : " << trapezoidalMethod(.1, x3, fx3, size) << endl;
-    cout << "Simpsons Method, h=.1 and n=8 : " << simpsonsMethod(.1, x3, fx3, size) << endl << endl;
+    cout << "\nTrapezoid Method : " << setprecision(10) << trapezoidalMethod(.1, x3, fx3, size) << endl;
+    cout << "Simpsons Method : " << setprecision(10) << simpsonsMethod(.1, x3, fx3, size) << endl << endl;
 }
