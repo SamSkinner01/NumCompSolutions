@@ -94,4 +94,4 @@ int main(){
     cout << "\nWith Lagrange Interpolation!\n-----------------------------------------------";
     cout << "\nTrapezoid Method : " << setprecision(10) << trapezoidalMethod(.1, x3, fx3, size) << endl;
     cout << "Simpsons Method : " << setprecision(10) << simpsonsMethod(.1, x3, fx3, size) << endl << endl;
-}
+} 
